@@ -1,0 +1,87 @@
+.chatbox {
+  bottom: 3%;
+  right: 2rem;
+  width: 25rem;
+  overflow-y: auto;
+  border: 2px solid black;
+
+  .box-nav {
+    position: fixed;
+    width: calc(25rem - 4px);
+    background: white;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    span{
+      width:fit-content;
+      font-size: 1.5rem;
+    }
+    span:nth-child(n+2){
+      border: 1px solid black;
+      padding: 5px 10px;
+      justify-self: flex-end;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .chat-content {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .msg-bar {
+    position: fixed;
+    bottom: calc(3% + 2px);
+    background: white;
+    width: calc(25rem - 4px);
+    display: flex;
+    textarea {
+      resize: vertical;
+      min-height: 3rem;
+      max-height: 4rem;
+      width: 20rem;
+      font-size: 1rem;
+      padding: 5px;
+    }
+    button {
+      width: 20%;
+    }
+  }
+}
+.open {
+  height: 30rem;
+  position: fixed;
+}
+.closed {
+  height: 4rem;
+  position: fixed;
+  padding: 5px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.closed-content {
+  text-align: center;
+}
+
+.bot {
+  color: red;
+  // text-align:left;
+}
+
+.user {
+  color: blue;
+  // text-align:right;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-left: 1px solid black;
+}
