@@ -13,15 +13,18 @@
     display: grid;
     .left {
       justify-self: flex-start;
+      background-color: peachpuff;
+      border-radius: 20px 20px 20px 0;
     }
     .right {
       text-align: right;
       justify-self: flex-end;
+      background-color: lightblue;
+      border-radius: 20px 0 20px 20px;
     }
     .msg {
       max-width: 80%;
       border: 1px solid black;
-      background: lightblue;
       padding: 5px;
     }
   }

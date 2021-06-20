@@ -76,7 +76,7 @@ const Chatbox = ({ chatdump }) => {
 
   const openApiAsync = async (doc, ques) => {
     let contextString = `${doc}`;
-    let engine = "davinci";
+    let engine = "babbage";
 
     let payload = {
       prompt: contextString,
