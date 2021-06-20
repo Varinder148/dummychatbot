@@ -24,12 +24,15 @@ const Chatbox = ({ chatdump }) => {
       setMsgs([...msgs, { msg: msg.trim(), sender: 1 }]);
       setMsg("");
       setIsLoading(true);
+
       let response = await gptReqAsync(msg);
+
       setMsgs([
         ...msgs,
         { msg: msg.trim(), sender: 1 },
         { msg: response, sender: 2 },
       ]);
+
       setIsLoading(false);
     }
   };

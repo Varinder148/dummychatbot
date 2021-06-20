@@ -7,7 +7,7 @@ import chatdump from './assets/chat-dump';
 function App() {
 
   // let dump = chatdump.replaceAll('.',"###");
-  let dump = chatdump.replaceAll('.',"###");
+  let dump = chatdump.replaceAll('\n',"###");
 
   return (
     <>
